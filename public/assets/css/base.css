@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("../fonts/gotham-light-webfont.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gotham";
+    src: url("../fonts/gotham-book-webfont.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gotham";
+    src: url("../fonts/gotham-medium-webfont.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gotham";
+    src: url("../fonts/gotham-bold-webfont.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gotham";
+    src: url("../fonts/gotham-black-webfont.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Monaco";
+    src: local("Monaco"), url("../fonts/Monaco.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ---------- DESIGN TOKENS (from Figma) ---------- */
+:root {
+    --c-bg:           #2C0F29;
+    --c-purple-900:   #331433;
+    --c-purple-800:   #402640;
+    --c-purple-700:   #431F43;
+    --c-purple-500:   #8E608E;
+    --c-purple-300:   #8F618F;
+    --c-lavender:     #C6AAC6;
+    --c-pink:         #E01A59;
+    --c-pink-dark:    #B81348;
+    --c-green:        #63C1A0;
+    --c-green-dark:   #258B74;
+    --c-near-black:   #170617;
+    --c-white:        #FFFFFF;
+    --c-purple-text:  #8F618F;
+    --c-input-text:  #431F43;
+    --c-footer-bg:    rgba(23, 6, 23, 0.3);
+    
+
+    --ff-sans:   "Gotham", "Montserrat", Arial, sans-serif;
+    --ff-gotham: "Gotham", "Montserrat", Arial, sans-serif;
+    --ff-mono:   "Monaco", Menlo, monospace;
+
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --t-fast:   140ms;
+}
+
+.mb-40 { margin-bottom: 40px; }
+.mb-20 { margin-bottom: 20px; }
+.mt-30 { margin-top: 30px; }
+
+/* ---------- GLOBAL RESETS / BASE ---------- */
+html { scroll-behavior: smooth; }
+body {
+    font-family: var(--ff-sans);
+    font-weight: 300;
+    font-size: 16px;
+    /* line-height: 1.75; */
+    color: var(--c-white);
+    background: var(--c-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    letter-spacing: 0;
+}
+img, svg { height: auto; display: block; }
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--t-fast) var(--ease-out);
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #000;
+    color: #fff;
+    padding: 10px 16px;
+    z-index: 1000;
+    font-weight: 700;
+}
+.skip-link:focus { left: 8px; top: 8px; }
+
+:focus-visible {
+    outline: 2px solid var(--c-pink);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}

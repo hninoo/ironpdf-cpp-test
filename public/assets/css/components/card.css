@@ -1,0 +1,29 @@
+
+#iron-pdf #early-access-section .lang-card {
+    background-color: #1F081D;
+    border: 3px solid var(--c-purple-700);
+    border-radius: 122px;
+    margin-top: -13px;
+    padding: 23px 30px;
+    height: 88px;
+}
+#iron-pdf #early-access-section .lang-card > .row > div:first-of-type {
+    padding-top: 6px;
+}
+#iron-pdf #early-access-section .lang-card__body{
+    font: normal 400 24px / 24px var(--ff-gotham);
+
+}
+#iron-pdf #early-access-section .lang-card__brand {
+    color: var(--c-lavender);
+    font: normal 400 24px/24px var(--ff-gotham);
+}
+#iron-pdf #early-access-section .lang-card__brand .fw-bold {
+    color: var(--c-lavender);
+    font: normal 700 24px/24px var(--ff-gotham);
+}
+#iron-pdf #early-access-section .lang-card__label {
+    color: var(--c-lavender);
+    font: normal 300 16px/16px var(--ff-gotham);
+    margin-left: 2px;
+}

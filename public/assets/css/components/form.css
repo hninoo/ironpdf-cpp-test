@@ -1,0 +1,109 @@
+#iron-pdf .signup {
+    max-width: 600px;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 3px solid #E7EEF0;
+    border-radius: 81px;
+    padding: 3px 3px 3px 26px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    transition: border-color var(--t-fast) var(--ease-out),
+                box-shadow   var(--t-fast) var(--ease-out);
+}
+#iron-pdf .signup:focus-within {
+    border-color: var(--c-pink);
+    box-shadow: 0 10px 30px rgba(224, 26, 89, 0.25);
+}
+
+#iron-pdf .signup input[type="email"] {
+    flex: 1 1 auto;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    margin: 8px 0px 5px -5px;
+    font: 500 14px/1.5 var(--ff-gotham);
+    color: #181818;
+    outline: none;
+}
+#iron-pdf .signup input[type="email"]::placeholder {
+    color: #8a8a8a;
+    font-weight: 500;
+}
+
+#iron-pdf .signup button {
+    background: var(--c-pink);
+    color: #fff;
+    border: 0;
+    border-radius: 79px;
+    padding: 0 37px;
+    height: 44px;
+    font: 700 16px/1 var(--ff-gotham);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    transition: background-color var(--t-fast) var(--ease-out);
+    width: 180px;
+}
+#iron-pdf .signup button:hover,
+#iron-pdf .signup button:focus-visible {
+    background: var(--c-pink-dark);
+}
+#iron-pdf .signup button[disabled] {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+/* Status line (shared with .signup-form) */
+.signup-form__status {
+    min-height: 1.5em;
+    margin: 10px auto 0;
+    max-width: 600px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--c-lavender);
+}
+.signup-form__status--error   { color: #ffb4b4; }
+.signup-form__status--success { color: var(--c-green); }
+
+/* ---------- MOBILE: stack input above button as separate pills ---------- */
+@media (max-width: 575.98px) {
+    #iron-pdf .signup {
+        flex-direction: column;
+        align-items: stretch;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        gap: 12px;
+    }
+    #iron-pdf .signup:focus-within {
+        box-shadow: none;
+    }
+    #iron-pdf .signup input[type="email"] {
+        box-sizing: border-box;
+        width: 100%;
+        height: 56px;
+        background: #fff;
+        border: 3px solid #E7EEF0;
+        border-radius: 40px;
+        padding: 0 24px;
+        font: 500 16px/56px var(--ff-gotham);
+        text-align: left;
+    }
+    #iron-pdf .signup button {
+        width: 100%;
+        height: 56px;
+        padding: 0 37px;
+        border-radius: 40px;
+        font-size: 16px;
+        justify-content: center;
+    }
+}
+@media (max-width: 912px) {
+    #iron-pdf .signup button {
+        height: 65px;
+    }
+}

@@ -1,0 +1,37 @@
+#iron-pdf .lang-card__chip {
+    background-color: var(--c-lavender);
+    border-radius: 126px;
+    color: var(--c-purple-900);
+    font: normal 700 14px/28px var(--ff-gotham);
+    padding: 4px 24px;
+}
+
+#iron-pdf .lang-card__chip--coming-soon {
+    background-color: var(--c-purple-900);
+    color: var(--c-lavender);
+    width: 158px;
+    margin-top: -4px;
+    margin-left: -6px;
+}
+
+#iron-pdf .lang-card__chip--released{
+        width: 127px;
+        margin-top: -2px;
+        margin-left: -2px;
+}
+
+@media (max-width : 375px) {
+    #iron-pdf .lang-card__chip {
+        padding: 4px 7px;
+    }
+}
+@media (max-width: 991px) {
+    #iron-pdf .lang-card__chip {
+        padding: 0px 7px;
+    }
+   
+    #iron-pdf .lang-card__chip--coming-soon{
+        width: 150px;
+    }
+}
+

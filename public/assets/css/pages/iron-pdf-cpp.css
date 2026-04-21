@@ -1,0 +1,442 @@
+/* ---------- WRAPPER & RESETS ---------- */
+#iron-pdf { color: #fff; font-family: var(--ff-gotham); }
+#iron-pdf a { color: inherit; }
+#iron-pdf em {
+    font-style: normal;
+    vertical-align: baseline;
+}
+
+/* ---------- SECTION BACKGROUNDS ---------- */
+#iron-pdf .bg-dark-purple  { background-color: var(--c-bg); }
+#iron-pdf .bg-light-purple { background-color: var(--c-purple-800); }
+#iron-pdf .bg-shape {
+    background-image: url("../../images/iron-pdf/section-shape.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+#iron-pdf .bg-shape--bottom { background: var(--c-footer-bg);}
+
+/* HERO SECTION */
+.hero__wrapper {
+    margin-top: -40px;
+    background-color: var(--c-bg);
+    position: relative;
+}
+
+.hero__art {
+    position: absolute;
+    top: 0;
+    right: 0px;
+   
+}
+
+
+.hero__container {
+    padding-top: 118px;
+    padding-bottom: 10px;
+}
+
+.ironpdf-cpp__logo{
+    width: 232.29px;
+    height: 40px;   
+}
+
+.hero__pre-title {
+    color: #fff;
+    font: normal 700 18px/26px var(--ff-gotham);
+    margin-bottom: 10px;
+}
+
+.hero__title {
+    color: #fff;
+    font: normal 900 50px/54px var(--ff-gotham);
+    margin-bottom: 10px;
+}
+
+.hero__title--accent {
+    color: var(--c-lavender);
+    display: block;
+}
+
+.hero__status {
+    color: var(--c-purple-text);
+    font: normal 300 14px/28px var(--ff-gotham);
+}
+
+#befirst-heading {
+    margin-bottom: 5px;
+}
+
+/* SIGNUP SECTION */
+.signup-block__wrapper {
+    background: linear-gradient(90deg, #8E608E 28.16%, #402640 67.82%, #371A34 83.75%);
+    height: 327px; 
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+
+.signup-block__title {
+    color: #fff;
+    font: normal 900 40px/44px var(--ff-gotham);
+}
+
+.signup-block__subtitle {
+    color: #fff;
+    font: normal 700 18px/26px var(--ff-gotham);
+}
+
+/* SIGNUP FORM */
+
+.signup-form.js-signup{
+   margin-top: 22px;
+}
+.signup-form__field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 530px;
+    height: 64px; 
+    background: #FFFFFF;
+    border: 3px solid var(--c-lavender);
+    border-radius: 81px;
+    padding-left: 19px; 
+    overflow: hidden;
+    margin-top: -2px;
+}
+
+.signup-form__input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font: normal 500 14px var(--ff-gotham);
+    color: var(--c-input-text);
+    outline: none;
+    padding: 1px 0px 5px 4px;
+}
+
+.signup-form__button {
+    width: 180px;
+    height: 64px;
+    background: var(--c-pink);
+    border: none;
+    border-radius: 79px;
+    color: #fff;
+    font: normal 700 16px/19px var(--ff-gotham);
+    transition: var(--transition);
+    padding: 1px 0px 5px 8px;
+}
+
+.signup-form__button:hover {
+    background-color: #c0134a;
+    box-shadow: 0 4px 15px rgba(224, 26, 89, 0.3);
+}
+
+/* BADGE STATUS */
+.signup-block__footer-status {
+    display: flex;
+    gap: 10px;
+}
+
+.badge-pill {
+    background: var(--c-lavender);
+    border-radius: 126px;
+    padding: 2px 18px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--c-purple-text);
+    font: normal 700 14px/28px var(--ff-gotham);
+}
+
+.badge-description {
+    color: #FFFFFF;
+    font: normal 300 16px/28px var(--ff-gotham);
+    margin-bottom: 0;
+}
+.badge-description em {
+    font: normal 500 16px/28px var(--ff-gotham);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .hero__illustration {
+        width: 600px;
+        top: 20px;
+    }
+}
+
+/* iPad landscape / iPad Pro portrait (992–1199px)
+   Scale hero__art down to fit beside hero text without overlap */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .hero__art {
+        width: 600px
+    }
+}
+
+/* iPad Pro landscape (1200–1399px)
+   Keep illustration proportional, slightly smaller than desktop's 780px natural */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .hero__art {
+        width: 720px
+    }
+}
+
+@media (max-width: 991px) {
+    .hero__wrapper { min-height: auto; }
+    .signup-block__wrapper { height: auto; padding: 60px 0; }
+    .hero__illustration { display: none; }
+    
+    .signup-form__field {
+        height: auto;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 15px;
+        background: transparent;
+        border: none;
+    }
+    
+    .signup-form__input {
+        box-sizing: border-box;
+        background: #fff;
+        width: 100%;
+        height: 56px;
+        border-radius: 40px;
+        padding: 0 22px;
+        margin-bottom: 12px;
+        font: 500 16px/56px var(--ff-gotham);
+        color: var(--c-input-text);
+    }
+
+    .signup-form__button {
+        width: 100%;
+        height: 56px;
+        font-size: 16px;
+    }
+}
+
+/* ---------- IRONPDF FEATURES ---------- */
+#iron-pdf #features-intro > .container-fluid {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+#iron-pdf #features-intro h2 {
+    color: #fff;
+    display: inline-block;
+    font: normal 900 40px/44px var(--ff-gotham);
+    position: relative;
+}
+#iron-pdf #features-intro .features__badge {
+    bottom: 6px;
+    position: absolute;
+    right: -58px;
+}
+#iron-pdf #features-intro .features__highlights {
+    color: #fff;
+    display: flex;
+    font: normal 300 16px/26px var(--ff-gotham);
+    margin-top: 45px;
+   
+}
+#iron-pdf #features-intro .features__highlights .features__divider > div {
+    background-color: var(--c-purple-800);
+    height: 26px;
+    width: 1px;
+    margin: 0px 25px 0px 25px;
+}
+#iron-pdf #features-intro .features__highlights .features__highlights-span{
+    padding-left: 2px;
+    padding-right: 4px;
+}
+#iron-pdf #features-details > .container-fluid {
+    padding-top: 54px;
+    padding-bottom: 37px;
+}
+#iron-pdf #features-details p {
+    color: #fff;
+    font: normal 300 16px/28px var(--ff-gotham);
+}
+#iron-pdf #features-details p em {
+    font: normal 500 16px/28px var(--ff-gotham);
+}
+#iron-pdf #features-details p ~ p {
+    margin-top: 22px;
+}
+
+/* ---------- WHY MAKE  ---------- */
+#iron-pdf #why-section > .container-fluid {
+    padding-top: 98px;
+    padding-bottom: 33px;
+}
+#iron-pdf #why-section h2 {
+    color: #fff;
+    font: normal 900 40px/48px var(--ff-gotham);
+}
+#iron-pdf #why-section h2 em {
+    color: var(--c-lavender);
+    font: normal 900 40px/48px var(--ff-gotham);
+}
+#iron-pdf #why-section p {
+    color: #fff;
+    font: normal 300 16px/28px var(--ff-gotham);
+    margin-top: 23px;
+    margin-left: 25px;
+}
+#iron-pdf #why-section p em {
+    font: normal 500 16px/28px var(--ff-gotham);
+}
+.why-make__illustration {
+    margin-top: -70px;
+    margin-left: -90px;
+}
+
+#whymake-heading{
+    margin-top: -55px;
+    margin-left: 25px;
+}
+
+/* ---------- EARLY ACCESS ---------- */
+#iron-pdf #early-access-intro > .container-fluid {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+#iron-pdf #early-access-intro h2 {
+    color: #fff;
+    font: normal 900 40px/44px var(--ff-gotham);
+}
+#iron-pdf #early-access-intro h2 em {
+    color: var(--c-lavender);
+    font: normal 900 40px/44px var(--ff-gotham);
+}
+#iron-pdf #early-access-intro p {
+    color: #fff;
+    font: normal 300 16px/28px var(--ff-gotham);
+    margin-top: 42px;
+}
+#iron-pdf #early-access-intro p em {
+    font: normal 500 16px/28px var(--ff-gotham);
+}
+#iron-pdf #early-access-intro .lang-grid {
+    margin-top: 33px;
+}
+
+#iron-pdf #early-access-signup > .container-fluid {
+    min-height: 231px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+}
+#iron-pdf #early-access-signup h2 {
+    color: #fff;
+    font: normal 900 30px/34px var(--ff-gotham);
+    text-align: center;
+    margin-top: -3px;
+}
+#iron-pdf #early-access-signup h2 em {
+    color: var(--c-lavender);
+    font: normal 900 30px/34px var(--ff-gotham);
+}
+h2#earlyaccess-heading {
+    margin-top: -8px;
+}
+
+
+/* ---------- Rectangle 7: 1184x343 linear-gradient 144.39deg pink→#460A48,
+   opacity 0.3, blur 117.5px. Adds warmth behind #2C0F29 sections. ---------- */
+#iron-pdf #features-section,
+#iron-pdf #early-access-section {
+    position: relative;
+    isolation: isolate;
+}
+#iron-pdf #features-section::before,
+#iron-pdf #early-access-section::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: min(1184px, 80vw);
+    height: 343px;
+    background: linear-gradient(144.39deg, #E01A59 -32.66%, #460A48 71.03%);
+    opacity: 0.3;
+    filter: blur(117.5px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ---------- RESPONSIVE: MOBILE (≤767.98px) ---------- */
+@media (max-width: 767.98px) {
+    .hero__container {
+        padding-top: 70px;
+    }
+    #iron-pdf #productpage #hero-section .container-fluid {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    #iron-pdf #productpage #hero-section h1,
+    #iron-pdf #productpage #hero-section h1 em {
+        font-size: 34px;
+        line-height: 38px;
+    }
+    .signup-block__footer-status{
+        align-items: center;
+    }
+    #whymake-heading{
+        margin: 0;
+    }
+    #iron-pdf #signup-section h2,
+    #iron-pdf #features-intro h2,
+    #iron-pdf #why-section h2,
+    #iron-pdf #why-section h2 em,
+    #iron-pdf #early-access-intro h2,
+    #iron-pdf #early-access-intro h2 em {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    #iron-pdf #early-access-signup h2,
+    #iron-pdf #early-access-signup h2 em {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    /* Feature bullets stack vertically */
+    #iron-pdf #features-intro .features__highlights {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        margin-top: 30px;
+    }
+    #iron-pdf #features-intro .features__highlights .features__divider { display: none; }
+
+    /* Keep "IronPDF for C++" + badge locked side-by-side on all mobile widths */
+    #iron-pdf #features-intro h2 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+    #iron-pdf #features-intro .features__badge {
+       right: -55px;
+    }
+
+    #iron-pdf #features-intro > .container-fluid {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    #iron-pdf #why-section > .container-fluid {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #iron-pdf #signup-section .status {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    #iron-pdf #early-access-section .lang-card {
+        padding: 16px 20px;
+    }
+}

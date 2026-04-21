@@ -1,0 +1,103 @@
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 7.62px 14px;
+}
+.site-nav__left {
+    display: flex;
+    align-items: center;
+}
+.site-nav__brand {
+    display: block;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+
+/* MENU  */
+.site-nav__menu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 0 25.04px; 
+    list-style: none;
+    gap: 24px;
+}
+
+
+.site-nav__link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 3.45px;
+    
+    font-family: var(--ff-gotham);
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: var(--c-white);
+    white-space: nowrap;
+}
+
+.site-nav__caret {
+   width: 6.29px;
+    height: 3.54px;
+   
+    fill: var(--c-white);
+}
+
+/* ---------- MOBILE HAMBURGER ---------- */
+.site-nav__toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.site-nav__toggle:focus-visible {
+    outline: 2px solid var(--c-pink);
+}
+.site-nav__toggle .bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: currentColor;
+    margin: 4px 0;
+    transition: transform var(--t-fast) var(--ease-out),
+                opacity   var(--t-fast) var(--ease-out);
+}
+.site-nav__toggle[aria-expanded="true"] .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.site-nav__toggle[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
+.site-nav__toggle[aria-expanded="true"] .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+@media (max-width: 767.98px) {
+    .site-nav__toggle { display: inline-block; }
+    .site-nav__left   { flex: 1; justify-content: space-between; }
+
+    .site-nav__menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        height: auto;
+        flex-direction: column;
+        background: var(--c-purple-900);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        padding: 20px 24px;
+        gap: 18px;
+        align-items: flex-start;
+        display: none;
+    }
+    .site-nav__menu[data-open="true"] { display: flex; }
+}
