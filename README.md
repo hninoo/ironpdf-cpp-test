@@ -128,7 +128,7 @@ app/
    ├─ pages/home.php
    └─ partials/{header,signup_form}.php
 
-public/assets/{css,js,fonts,images,vendor}/
+public/assets/{css,js,fonts,images,bootstrap}/
 ```
 
 ## Production checklist
