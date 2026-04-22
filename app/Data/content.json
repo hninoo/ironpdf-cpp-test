@@ -84,9 +84,9 @@
             "suffix": "PDF"
         },
         "cards": [
-            { "label": "Java",       "href": "/java/",    "status": "Released",    "platform": "for Java" },
-            { "label": "Python",     "href": "/python/",  "status": "Coming Soon",    "platform": "for Python" },
-            { "label": "Node.JS",    "href": "/nodejs/",  "status": "Coming Soon",    "platform": "for Node.JS" }
+            { "label": "Java",       "href": "#",    "status": "Released",    "platform": "for Java" },
+            { "label": "Python",     "href": "#",  "status": "Coming Soon",    "platform": "for Python" },
+            { "label": "Node.JS",    "href": "#",  "status": "Coming Soon",    "platform": "for Node.JS" }
 
         ]
     },
