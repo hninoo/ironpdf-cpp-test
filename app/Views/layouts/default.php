@@ -30,7 +30,7 @@ $m = $c['meta'];
     <link rel="preload" as="font" type="font/woff2" href="<?= base_url('assets/fonts/gotham-bold-webfont.woff2') ?>" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="<?= base_url('assets/fonts/gotham-black-webfont.woff2') ?>" crossorigin>
 
-    <link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/bootstrap/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/base.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/layout.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/components/navbar.css') ?>">
@@ -51,7 +51,7 @@ $m = $c['meta'];
 </main>
 
 
-<script src="<?= base_url('assets/vendor/bootstrap/bootstrap.bundle.min.js') ?>" defer></script>
+<script src="<?= base_url('assets/bootstrap/bootstrap.bundle.min.js') ?>" defer></script>
 <script src="<?= base_url('assets/js/main.js') ?>" defer></script>
 </body>
 </html>

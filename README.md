@@ -4,10 +4,17 @@ A CodeIgniter 4 implementation of the IronPDF for C++ beta-program landing page.
 
 ## Requirements
 
-- PHP **8.1+** (backed enums are used)
-- Composer
+- PHP **8.2+** (CodeIgniter 4.7 and `laminas/laminas-escaper` 2.18 both require `^8.2`)
+- Composer 2.x
 - CodeIgniter 4 (installed via Composer)
 - Extensions: `intl`, `mbstring`, `json`
+
+Verify your PHP version before installing:
+
+```bash
+php -v
+# Must report PHP 8.2.x or newer
+```
 
 ## Installation
 
